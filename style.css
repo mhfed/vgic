@@ -1,6 +1,6 @@
 /* Custom CSS Variables */
 :root {
-    --primary-blue: #1e3a8a;
+    --primary-blue: #1736F5;
     --secondary-blue: #3b82f6;
     --accent-yellow: #fbbf24;
     --accent-orange: #f97316;
@@ -8,6 +8,7 @@
     --gray-light: #f1f5f9;
     --gray-medium: #64748b;
     --about-blue: #0405A3;
+    --black: #000000;
 }
 
 /* Override Bootstrap variables */
@@ -63,9 +64,57 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+/* Headings use Poppins font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button and navigation elements */
+.btn, .navbar-nav, .nav-link {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Font Override Classes */
+.work-sans {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Font Weight Classes for Work Sans */
+.work-sans-light {
+    font-weight: 300;
+}
+
+.work-sans-regular {
+    font-weight: 400;
+}
+
+.work-sans-medium {
+    font-weight: 500;
+}
+
+.work-sans-semibold {
+    font-weight: 600;
+}
+
+.work-sans-bold {
+    font-weight: 700;
+}
+
+.work-sans-extrabold {
+    font-weight: 800;
+}
+
+.work-sans-black {
+    font-weight: 900;
 }
 
 .container {
@@ -175,8 +224,8 @@ body {
 }
 
 .register-btn {
-    background: var(--accent-yellow) !important;
-    color: var(--primary-blue) !important;
+    background: var(--primary-blue) !important;
+    color: var(--gray-light) !important;
     border: none !important;
     font-weight: 600;
     padding: 0.5rem 1.5rem !important;
@@ -193,7 +242,7 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 80vh;
+    /* min-height: 80vh; */
     position: relative;
     overflow: hidden;
     padding-top: 80px;
@@ -226,12 +275,12 @@ body {
 }
 
 .hero-bg-slide:nth-child(1) {
-    background-image: linear-gradient(rgba(30, 58, 138, 0.7)),
+    background-image: linear-gradient(rgba(30, 58, 138, 0.3)),
                       url('https://www.vgic.net/wp-content/uploads/2025/01/heading-1-min.jpg');
 }
 
 .hero-bg-slide:nth-child(2) {
-    background-image: linear-gradient(rgba(30, 58, 138, 0.7)),
+    background-image: linear-gradient(rgba(30, 58, 138, 0.3)),
                       url('https://www.vgic.net/wp-content/uploads/2025/01/Marina_Bay_digital_Singapore_1.jpg');
 }
 
@@ -293,9 +342,9 @@ body {
 }
 
 .about-section-content {
-    max-width: 1200px;
-
+    max-width: 1000px;
 }
+
 .about-section .detail-card h3 {
     color: white;
     text-transform: uppercase;
@@ -344,7 +393,6 @@ body {
 .topic-card-new {
     background: white;
     border: 2px solid var(--primary-blue);
-    border-radius: 15px;
     padding: 2rem;
     height: 100%;
     transition: all 0.3s ease;
@@ -648,10 +696,10 @@ body {
 }
 
 .event-title {
-    color: #1e3a8a;
-    font-weight: bold;
+    color: var(--black);
+    font-weight: 500;
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .event-description {
@@ -705,82 +753,12 @@ body {
 /* Our Guests & Speakers Hero Section */
 .guests-speakers-hero {
     position: relative;
-    min-height: 500px;
+    min-height: 800px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     overflow: hidden;
 }
 
-/* Decorative Elements */
-.decorative-elements {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    z-index: 5;
-    overflow: hidden;
-}
-
-.decoration {
-    position: absolute;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    animation: float 6s ease-in-out infinite;
-}
-
-.decoration-1 {
-    width: 120px;
-    height: 80px;
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    top: 20px;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.decoration-2 {
-    width: 100px;
-    height: 70px;
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    top: 40px;
-    left: 25%;
-    animation-delay: 1s;
-}
-
-.decoration-3 {
-    width: 140px;
-    height: 90px;
-    background: linear-gradient(135deg, #ef4444, #dc2626);
-    top: 10px;
-    left: 45%;
-    animation-delay: 2s;
-}
-
-.decoration-4 {
-    width: 110px;
-    height: 75px;
-    background: linear-gradient(135deg, #1e3a8a, #1e40af);
-    top: 35px;
-    left: 65%;
-    animation-delay: 3s;
-}
-
-.decoration-5 {
-    width: 90px;
-    height: 60px;
-    background: linear-gradient(135deg, #10b981, #059669);
-    top: 15px;
-    left: 80%;
-    animation-delay: 4s;
-}
-
-.decoration-6 {
-    width: 130px;
-    height: 85px;
-    background: linear-gradient(135deg, #f59e0b, #d97706);
-    top: 45px;
-    left: 90%;
-    animation-delay: 5s;
-}
 
 @keyframes float {
     0%, 100% {
@@ -802,7 +780,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120%;
+    height: 80%;
     background-image: url('https://www.vgic.net/wp-content/uploads/2025/01/google-office-new-min.jpg');
     background-size: cover;
     background-position: center;
@@ -813,13 +791,21 @@ body {
     will-change: transform;
 }
 
+.guests-speakers-background-svg {
+    position: absolute;
+    top: -130px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 .guests-speakers-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(30, 58, 138, 0.7) 50%, rgba(30, 58, 138, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.2) 0%, rgba(30, 58, 138, 0.2) 50%, rgba(30, 58, 138, 0.2) 100%);
     z-index: 2;
 }
 
@@ -827,7 +813,11 @@ body {
     position: relative;
     z-index: 3;
 }
-
+.guests-speakers-wrapper{
+    background: var(--about-blue);
+    z-index: 3;
+    width: 100%;
+}
 .guests-speakers-content {
     padding: 4rem 0;
     text-align: center;
@@ -1555,7 +1545,6 @@ html {
 
 .goals-slideshow {
     position: relative;
-    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
@@ -1580,9 +1569,8 @@ html {
 
 .goals-slide img {
     width: 100%;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
-    border-radius: 15px;
 }
 
 .slideshow-indicators {
@@ -1728,7 +1716,7 @@ html {
 .feature-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--gray-medium);
+    color: var(--black);
 }
 
 /* Responsive Key Features */
@@ -1766,7 +1754,6 @@ html {
 
 /* What You Will Get Section */
 .what-you-get-section {
-    background: var(--gray-light);
     padding: 100px 0;
 }
 
@@ -1774,12 +1761,22 @@ html {
     font-size: 3rem;
     font-weight: 700;
     color: var(--primary-blue);
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     text-transform: capitalize;
 }
 
+.section-title-blur {
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    opacity: 0.1;
+    transform: translateX(-100%) translateY(-60%);
+}
+
 .benefit-card {
-    background: white;
+    background: #F9F9F9;
     border: none;
     border-radius: 20px;
     transition: all 0.4s ease;
@@ -1836,7 +1833,7 @@ html {
 .benefit-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--gray-medium);
+    color: var(--black);
     margin-bottom: 0;
 }
 
@@ -2090,17 +2087,17 @@ html {
 }
 
 .decoration-circle {
-    width: 80px;
-    height: 80px;
-    background: #1e3a8a;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-blue);
     border-radius: 50%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .media-partners-title {
     font-size: 3.5rem;
-    font-weight: 900;
-    color: #1e3a8a;
+    font-weight: 700;
+    color: var(--primary-blue);
     margin-bottom: 3rem;
     position: relative;
     z-index: 2;
@@ -2192,7 +2189,11 @@ html {
 
 /* New Footer Styles */
 .new-footer {
-    background: linear-gradient(135deg, #4a3fa6 0%, #2d1b8f 50%, #1e1577 100%);
+    background-image:  url('https://www.vgic.net/wp-content/uploads/2021/12/bg-vgoc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--about-blue);
     position: relative;
     padding: 4rem 0 0;
     overflow: hidden;
@@ -2264,34 +2265,9 @@ html {
 .footer-logo-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 1.5rem;
-    color: #1e3a8a;
     flex-shrink: 0;
 }
 
-.footer-logo-text {
-    color: white;
-}
-
-.footer-logo-main {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0.2rem;
-}
-
-.footer-logo-sub {
-    font-size: 0.7rem;
-    font-weight: 400;
-    opacity: 0.8;
-    line-height: 1.2;
-}
 
 /* Footer Slogan */
 .footer-slogan {
@@ -2308,10 +2284,10 @@ html {
 
 /* Contact Section */
 .contact-title {
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .contact-email {
@@ -2338,7 +2314,6 @@ html {
 .social-media {
     display: flex;
     gap: 1rem;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -2370,7 +2345,7 @@ html {
 
 /* Footer Bottom */
 .footer-bottom {
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--about-blue);
     padding: 1.5rem 0;
     margin-top: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
