@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VGIC – Vietnam Global Innovation Connect</title>
+    <title>Vietnam Global Innovation Connect</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <img src="https://www.vgic.net/wp-content/uploads/2021/12/vgic-logo-white.png" alt="VGIC Logo" class="loader-logo">
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="container">
@@ -46,8 +53,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#venue">Venue</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link language-selector" href="#">🇺🇸 English</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle language-selector" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-warning register-btn ms-2" href="#">Register</a>
@@ -72,33 +85,34 @@
                     <div class="hero-content text-center text-white">
                         <h1 class="display-1 fw-bold mb-4">Vietnam Global<br>Innovation Connect</h1>
                         <div class="typing-container mb-4">
-                            <div class="typing-text display-4 fw-bold">SEMICONDUCTOR</div>
+                            <h2 class="typing-text display-1 fw-bold">SEMICONDUCTOR</h2>
                         </div>
-                        <div class="hero-date h2 mb-3">20-22 February 2025</div>
-                        <div class="hero-location h4">Singapore</div>
+                        <div class="hero-date h5 mb-3">20-22 February 2025</div>
+                        <div class="hero-location h5">Singapore</div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="about-wave-decoration">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none" fill="#0405A3">
+                <path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
+                <path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
+                <path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
+                <path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
+                <path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
+                <path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
+                <path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
+                <path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
+                <path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
+            </svg>
+        </div>
     </section>
 
 
-    <div class="about-wave-decoration">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
-            <path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
-            <path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
-            <path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
-            <path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
-            <path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
-            <path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
-            <path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
-            <path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
-            <path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
-        </svg>
-    </div>
+   
     <!-- About Section -->
     <section class="about-section py-5">
-        <div class="container">
+        <div class="container about-section-content">
             <div class="row">
                 <div class="col-12">
                     <h2 class="text-center mb-5 text-white">About The Event</h2>
@@ -130,7 +144,7 @@
                         <div class="col-md-4">
                             <div class="detail-card">
                                 <h3 class="text-uppercase fw-bold mb-3">Organizers</h3>
-                                <p class="fs-6">AVSE Global</p>
+                                <p class="fs-6"></p>
                             </div>
                         </div>
                     </div>
@@ -166,26 +180,26 @@
                 
                 <!-- Content Column -->
                 <div class="col-lg-6">
-                    <div class="goals-content ps-lg-4">
-                        <h2 class="mb-4 text-primary fw-bold text-uppercase">Goals & Aspirations</h2>
+                                            <div class="goals-content ps-lg-4">
+                        <h1 class="mb-4 text-primary fw-bold text-uppercase">GOALS & ASPIRATIONS</h1>
                         <p class="fs-5 mb-4 text-muted">
                             With the mission of inspiring and leading solutions to promote the application of science and technology, VGIC 2025 focuses on the central theme "Connect - Converge - Create: Empowering the Future with Technology."
                         </p>
                         
                         <div class="goals-items">
                             <div class="goal-item mb-4">
-                                <h4 class="text-primary fw-bold mb-2">Connect</h4>
+                                <h4 class="text-primary fw-bold mb-2"><strong>Connect</strong></h4>
                                 <p class="text-muted">to promote extensive cooperation and explore practical directions for helping Vietnam effectively participate in the global semiconductor supply chain, AI ecosystem, and fintech network.</p>
                             </div>
                             
                             <div class="goal-item mb-4">
-                                <h4 class="text-primary fw-bold mb-2">Converge</h4>
-                                <p class="text-muted">and create a platform where new ideas and technologies intersect, creating synergy in innovative solutions based on AI, semiconductor and fintech - the main drivers of the country's sustainable development and future prosperity in the new era.</p>
+                                <h4 class="text-primary fw-bold mb-2"><strong>Converge</strong></h4>
+                                <p class="text-muted">and create a platform where new ideas and technologies intersect, creating synergy in innovative solutions based on AI, semiconductor and fintech - the main drivers of the country's sustainable development and prosperity in the new era.</p>
                             </div>
                             
                             <div class="goal-item">
-                                <h4 class="text-primary fw-bold mb-2">Create</h4>
-                                <p class="text-muted">sustainable values by leveraging innovation, transforming knowledge into action, and building practical strategies, affirming Vietnam's position on the world technology map.</p>
+                                <h4 class="text-primary fw-bold mb-2"><strong>Create</strong></h4>
+                                <p class="text-muted">sustainable values ​​by leveraging innovation, transforming knowledge into action, and building practical strategies, affirming Vietnam's position on the world technology map.</p>
                             </div>
                         </div>
                     </div>
@@ -213,7 +227,7 @@
                         <div class="feature-icon mb-4">
                             <i class="bi bi-globe feature-icon-orange"></i>
                         </div>
-                        <h3 class="feature-title text-warning mb-3">CONNECT<br>VENTURE<br>CAPITAL</h3>
+                        <h3 class="feature-title text-warning mb-3">Connect<br>VENTURE<br>CAPITAL</h3>
                         <p class="feature-description text-muted">Connecting investment funds and startups</p>
                     </div>
                 </div>
@@ -233,7 +247,7 @@
                         <div class="feature-icon mb-4">
                             <i class="bi bi-building feature-icon-orange"></i>
                         </div>
-                        <h3 class="feature-title text-warning mb-3">SITE VISIT</h3>
+                        <h3 class="feature-title text-warning mb-3">SITE<br>Visit</h3>
                         <p class="feature-description text-muted">Site visits to renowned semiconductor, robotics, and AI laboratories, with live demos of AI solutions</p>
                     </div>
                 </div>
@@ -247,6 +261,7 @@
             <div class="row">
                 <div class="col-12 text-center mb-5">
                     <h2 class="section-title text-primary fw-bold">What you will get</h2>
+                    <h2 class="section-title text-primary fw-bold">Our Values</h2>
                 </div>
             </div>
             <div class="row g-4">
@@ -294,12 +309,12 @@
     </section>
 
     <!-- Countdown Section -->
-    <section class="countdown-section py-5" data-countdown-date="2025-06-20T09:00:00">
+    <section class="countdown-section py-5" data-countdown-date="2025-02-20T09:00:00">
         <div class="countdown-overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="countdown-title text-white fw-bold mb-4">HURRY UP!</h2>
+                    <h1 class="countdown-title text-white fw-bold mb-4">HURRY UP!</h1>
                     <a href="#" class="btn btn-primary btn-lg mb-4 register-now-btn">Register Now</a>
                     <p class="countdown-subtitle text-white mb-5">VGIC 2025 will start in</p>
                     
@@ -340,51 +355,53 @@
             </svg>
         </div>
         
-        <div class="container row g-4 justify-content-center position-relative">
-            <div class="col-lg-4 col-md-6">
-                <div class="topic-card-new">
-                    <div class="topic-header">
-                        <h3 class="topic-title-new text-primary fw-bold">SEMICONDUCTOR</h3>
-                        <div class="topic-number-new">1</div>
-                    </div>
-                    <div class="topic-content">
-                        <ul class="topic-list">
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Address global chip shortages and strategies for supply chain resilience.</li>
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Highlight advanced technologies like AI-specific chips and quantum computing.</li>
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Explore Vietnam's potential in semiconductors, focusing on infrastructure, talent, and investment.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="topic-card-new">
-                    <div class="topic-header">
-                        <h3 class="topic-title-new text-primary fw-bold">AI & GENAI</h3>
-                        <div class="topic-number-new">2</div>
-                    </div>
-                    <div class="topic-content">
-                        <ul class="topic-list">
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Focus on generative AI applications and ethical considerations.</li>
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Explore AI's role in healthcare, sustainability, and accessibility.</li>
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Discuss AI's impact on jobs and workforce upskilling.</li>
-                        </ul>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="topic-card-new">
+                        <div class="topic-header">
+                            <h3 class="topic-title-new text-primary fw-bold">SEMICONDUCTOR</h3>
+                            <div class="topic-number-new">1</div>
+                        </div>
+                        <div class="topic-content">
+                            <ul class="topic-list">
+                                <li>• Address global chip shortages and strategies for supply chain resilience.</li>
+                                <li>• Highlight advanced technologies like AI-specific chips and quantum computing.</li>
+                                <li>• Explore Vietnam's potential in semiconductors, focusing on infrastructure, talent, and investment.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="topic-card-new">
-                    <div class="topic-header">
-                        <h3 class="topic-title-new text-primary fw-bold">FINTECH</h3>
-                        <div class="topic-number-new">3</div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="topic-card-new">
+                        <div class="topic-header">
+                            <h3 class="topic-title-new text-primary fw-bold">AI & GENAI</h3>
+                            <div class="topic-number-new">2</div>
+                        </div>
+                        <div class="topic-content">
+                            <ul class="topic-list">
+                                <li>• Focus on generative AI applications and ethical considerations.</li>
+                                <li>• Explore AI's role in healthcare, sustainability, and accessibility.</li>
+                                <li>• Discuss AI's impact on jobs and workforce upskilling.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="topic-content">
-                        <ul class="topic-list">
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Discuss embedded finance and open banking opportunities.</li>
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Explore AI applications in fraud detection and personalized financial services.</li>
-                            <li><i class="bi bi-check-lg text-success me-2"></i>Highlight the future of payments, including digital currencies and security challenges.</li>
-                        </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="topic-card-new">
+                        <div class="topic-header">
+                            <h3 class="topic-title-new text-primary fw-bold">FINTECH</h3>
+                            <div class="topic-number-new">3</div>
+                        </div>
+                        <div class="topic-content">
+                            <ul class="topic-list">
+                                <li>• Discuss embedded finance and open banking opportunities.</li>
+                                <li>• Explore AI applications in fraud detection and personalized financial services.</li>
+                                <li>• Highlight the future of payments, including digital currencies and security challenges.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -454,10 +471,60 @@
                                 <div class="event-item" data-topic="all">
                                     <div class="event-time">
                                         <i class="bi bi-clock"></i>
+                                        <span>12:00 - 12:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Registration</h5>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
                                         <span>12:30 - 14:00</span>
                                     </div>
                                     <div class="event-content">
                                         <h5 class="event-title">Gourmet Luncheon</h5>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>14:00 - 14:15</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Opening Ceremony</h5>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>14:15 - 15:15</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Plenary Session I: Innovation Without Borders: The Future is Here</h5>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>15:15 - 16:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Plenary Session II: Innovate, Integrate, Inspire: Shaping Vietnam's Tech-Driven Future</h5>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>16:30 - 16:45</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Tea Break & Forum Photo Session</h5>
                                     </div>
                                 </div>
 
@@ -470,18 +537,60 @@
                                         <h5 class="event-title">Panel: Vietnam Global Innovation Connect: Power of Synergy</h5>
                                     </div>
                                 </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>18:00 - 21:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">VIP Gala Dinner: Talent – Connection – Empowerment (By Invitation only)</h5>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- Day 2 Events -->
                             <div class="day-events" id="day2">
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>8:30 - 9:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Breakfast Welcome</h5>
+                                        <p class="event-description">Warm-up & Networking</p>
+                                    </div>
+                                </div>
+
                                 <div class="event-item" data-topic="ai">
                                     <div class="event-time">
                                         <i class="bi bi-clock"></i>
-                                        <span>09:30 - 12:00</span>
+                                        <span>9:30 - 12:00</span>
                                     </div>
                                     <div class="event-content">
-                                        <h5 class="event-title">AI & GenAI Deep Dive Workshop</h5>
-                                        <p class="event-description">Exploring the latest developments in artificial intelligence and generative AI technologies</p>
+                                        <h5 class="event-title">Parallel workshops - Session 1: AI & GenAI DEEP DIVE</h5>
+                                        <p class="event-description">Live Demo for Industry Use Cases From Hype to Reality, AI Ethics & Governance, Scaling AI Startups, The Future of Work.</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="semiconductor">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>9:30 - 12:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Parallel workshops - Session 2: Emerging Technologies - DEEP DIVE</h5>
+                                        <p class="event-description">Web3 & Blockchain (Decentralization and its impact on security, finance, and healthcare); Semiconductors (Powering the next wave of digital transformation); Smart Manufacturing & IoT (Revolutionizing production and supply chain efficiency); IT/Quantum Computing</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>11:30 - 13:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Gourmet Luncheon</h5>
                                     </div>
                                 </div>
 
@@ -491,8 +600,19 @@
                                         <span>13:00 - 16:00</span>
                                     </div>
                                     <div class="event-content">
-                                        <h5 class="event-title">FinTech Innovation Pitch-A-Thon</h5>
-                                        <p class="event-description">Venture capital presentations focusing on financial technology solutions</p>
+                                        <h5 class="event-title">Pitch-A-Thon</h5>
+                                        <p class="event-description">Venture capital: Golden Gate Ventures (Managing Partners), Vertex Ventures, Monks Hill's Ventures, VI Group, Ascend Vietnam Ventures, Expara Ventures.<br><strong>Where:</strong> Google APAC Headquarter</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>14:00 - 17:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">B2B Meet&Match</h5>
+                                        <p class="event-description">B2B Meet and Match with speakers and distinguished guests of the VGIC 2025 (START.UP- START.HERE - START.NOW)</p>
                                     </div>
                                 </div>
 
@@ -503,21 +623,52 @@
                                     </div>
                                     <div class="event-content">
                                         <h5 class="event-title">VGIC2025 Recognition Ceremony</h5>
-                                        <p class="event-description">Excellence Award & People's Choice Innovation Award</p>
+                                        <p class="event-description">"VGIC2025 Excellence Award" – Selected by the Board Committee (BC), recognizing the most groundbreaking and impactful startup; "VGIC2025 People's Choice Innovation Award" – Voted by attendees, celebrating the most inspiring and promising startup.<br><strong>Where:</strong> Google APAC Headquarter</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>16:15 - 16:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Closing Ceremony</h5>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Day 3 Events -->
                             <div class="day-events" id="day3">
-                                <div class="event-item" data-topic="semiconductor">
+                                <div class="event-item" data-topic="all">
                                     <div class="event-time">
                                         <i class="bi bi-clock"></i>
-                                        <span>09:30 - 10:15</span>
+                                        <span>8:30 - 9:00</span>
                                     </div>
                                     <div class="event-content">
-                                        <h5 class="event-title">Semiconductor Industry Fireside Chat</h5>
-                                        <p class="event-description">"What Lies Ahead – Career trends and opportunities in semiconductor"</p>
+                                        <h5 class="event-title">Opening Ceremony</h5>
+                                        <p class="event-description">Mingling between speakers and students & Registration</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>9:00 - 9:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Welcome speech</h5>
+                                        <p class="event-description">Welcome speech by SMU representative, Introductory speech by VNYA, Introductory speech by AVSE representative<br><strong>Where:</strong> Singapore Management University</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>9:30 - 10:15</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Fireside chat: "What Lies Ahead – Career trends and opportunities in the current economy"</h5>
                                     </div>
                                 </div>
 
@@ -527,19 +678,28 @@
                                         <span>10:20 - 11:25</span>
                                     </div>
                                     <div class="event-content">
-                                        <h5 class="event-title">Speed Networking</h5>
-                                        <p class="event-description">Career guidance, CV clinic at Singapore Management University</p>
+                                        <h5 class="event-title">Speed Networking Career Guidance</h5>
+                                        <p class="event-description">providing career advice, job search tips, industry insights, CV clinic<br><strong>Where:</strong> Singapore Management University</p>
                                     </div>
                                 </div>
 
                                 <div class="event-item" data-topic="all">
                                     <div class="event-time">
                                         <i class="bi bi-clock"></i>
-                                        <span>08:30 - 12:30</span>
+                                        <span>8:30 - 12:30</span>
                                     </div>
                                     <div class="event-content">
-                                        <h5 class="event-title">Flash Report</h5>
-                                        <p class="event-description">With Experts (invitation only)</p>
+                                        <h5 class="event-title">Flash Report with Experts (invitation only)</h5>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>11:25 - 11:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Closing remarks</h5>
                                     </div>
                                 </div>
                             </div>
@@ -584,6 +744,13 @@
     <!-- Speakers Section -->
     <section id="speakers" class="speakers-section py-5 bg-white">
         <div class="container">
+            <!-- Load More Button -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary btn-lg px-5 py-3" id="loadMoreSpeakers">Load More</button>
+                </div>
+            </div>
+
             <!-- First Row of Speakers -->
             <div class="row g-4 mb-5">
                 <div class="col-lg-20p col-md-6 col-sm-12">
@@ -750,12 +917,18 @@
                         <!-- Location -->
                         <h3 class="venue-location-title">Singapore, 2025</h3>
                         
+                        <!-- Address -->
+                        <div class="venue-address mb-4">
+                            <h4 class="text-primary fw-bold mb-2">Google APAC Headquarters in Singapore</h4>
+                            <p class="text-muted">Google Singapore, 70 Pasir Panjang Rd, #03-71, Mapletree Business City II, Singapore 117371</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Get directions</a>
+                        </div>
+                        
                         <!-- Venue Names with Arrow -->
                         <div class="venue-names-with-arrow">
-                            <div class="venue-arrow-pointer">→</div>
+                            <div class="venue-arrow-pointer">➜</div>
                             <div class="venue-name-list">
-                                <div class="venue-name-bold">Google APAC Headquarters</div>
-                                <div class="venue-name-bold">Singapore Management University</div>
+                                <h3 class="venue-name-bold">Google APAC Headquarters<br>Singapore Management University</h3>
                             </div>
                         </div>
                         
@@ -768,7 +941,11 @@
                         
                         <!-- VGIC Badge - Vertical -->
                         <div class="vgic-badge-vertical">
-                            <span class="vgic-text-vertical">VGIC 2025</span>
+                            <div class="vgic-text-vertical">
+                                <div>VGIC 2025</div>
+                                <div class="mt-2">Top 100 Innovators</div>
+                                <div class="mt-2">20 - 22 FEB Singapore</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -862,8 +1039,32 @@
                         
                         <!-- Slogan -->
                         <div class="footer-slogan">
-                            <h3 class="slogan-text">CONNECT – CONVERGE – CREATE:</h3>
-                            <h3 class="slogan-text">EMPOWERING THE FUTURE WITH TECHNOLOGY</h3>
+                            <h3 class="slogan-text"><strong>CONNECT – CONVERGE – CREATE:</strong></h3>
+                            <h3 class="slogan-text"><strong>EMPOWERING THE FUTURE WITH TECHNOLOGY</strong></h3>
+                        </div>
+                        
+                        <!-- Additional Footer Info -->
+                        <div class="footer-info mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <h5 class="text-white mb-2">Topics</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-light">Semiconductor</a></li>
+                                        <li><a href="#" class="text-light">AI & GENAI</a></li>
+                                        <li><a href="#" class="text-light">Fintech</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-white mb-2">When</h5>
+                                    <p class="text-light">Thursday to Saturaday</p>
+                                    <p class="text-light">Feb 20 to 22, 2025</p>
+                                    
+                                    <h5 class="text-white mb-2 mt-3">Where</h5>
+                                    <p class="text-light">Google APAC Headquarters in Singapore</p>
+                                    <p class="text-light small">Google Singapore, 70 Pasir Panjang Rd, #03-71, Mapletree Business City II, Singapore 117371</p>
+                                    <a href="#" class="btn btn-outline-light btn-sm mt-2">Get directions</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

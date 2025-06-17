@@ -1,3 +1,16 @@
+// Loader functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const loader = document.getElementById('loader');
+    
+    // Hide loader after 2 seconds
+    setTimeout(() => {
+        loader.classList.add('hide');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }, 2000);
+});
+
 // Background Slideshow for Hero Section
 class BackgroundSlideshow {
     constructor(container, interval = 3000) {
@@ -457,7 +470,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('section').forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
-        section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        section.style.transition = 'opacity 0.1s ease, transform 0.1s ease';
         observer.observe(section);
     });
 
@@ -487,7 +500,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Set initial body opacity for smooth load
     document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.5s ease';
+    document.body.style.transition = 'opacity 0.1s ease';
 });
 
 // Mobile menu toggle (if needed in future)
@@ -505,7 +518,7 @@ function toggleMobileMenu() {
 // Parallax effect for hero background
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
+    const hero = document.querySelector('.hero-content');
     if (hero) {
         const rate = scrolled * -0.5;
         hero.style.transform = `translateY(${rate}px)`;
