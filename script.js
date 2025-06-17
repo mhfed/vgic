@@ -412,16 +412,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(30, 58, 138, 0.98)';
-            navbar.style.backdropFilter = 'blur(15px)';
-        } else {
-            navbar.style.background = 'rgba(30, 58, 138, 0.95)';
-            navbar.style.backdropFilter = 'blur(10px)';
-        }
-    });
+    initNavbarScrollEffect();
 
     // Active navigation link highlighting
     const sections = document.querySelectorAll('section[id]');
@@ -431,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let current = '';
         
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
+            const sectionTop = section.offsetTop - 180;
             const sectionHeight = section.clientHeight;
             
             if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
@@ -661,5 +652,19 @@ class MobileMenuManager {
             const bsCollapse = bootstrap.Collapse.getInstance(this.navbar) || new bootstrap.Collapse(this.navbar, { toggle: false });
             bsCollapse.hide();
         }
+    }
+}
+
+// Initialize navbar scroll effect
+function initNavbarScrollEffect() {
+    const navbar = document.querySelector('.custom-navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     }
 }
