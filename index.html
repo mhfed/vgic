@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGIC – Vietnam Global Innovation Connect</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="#home">
+                <div class="d-flex align-items-center">
+                    <img src="https://www.vgic.net/wp-content/uploads/2021/12/vgic-logo-white.png" alt="VGIC Logo" class="logo-image">
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Mobile Close Button -->
+                <button class="mobile-close-btn d-lg-none" type="button" aria-label="Close menu">
+                    <i class="bi bi-x"></i>
+                </button>
+                
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#speakers">Speakers & Guests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#venue">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link language-selector" href="#">🇺🇸 English</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning register-btn ms-2" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="navbar-overlay" id="navbarOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero position-relative">
+        <div class="hero-background">
+            <div class="hero-bg-slide active"></div>
+            <div class="hero-bg-slide"></div>
+        </div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12">
+                    <div class="hero-content text-center text-white">
+                        <h1 class="display-1 fw-bold mb-4">Vietnam Global<br>Innovation Connect</h1>
+                        <div class="typing-container mb-4">
+                            <div class="typing-text display-4 fw-bold">SEMICONDUCTOR</div>
+                        </div>
+                        <div class="hero-date h2 mb-3">20-22 February 2025</div>
+                        <div class="hero-location h4">Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-5 text-white">About The Event</h2>
+                    <div class="about-content">
+                        <p class="text-center fs-4 fw-semibold mb-5">
+                            <strong>CONNECT – CONVERGE – CREATE: EMPOWERING THE FUTURE WITH TECHNOLOGY</strong>
+                        </p>
+                        <p class="fs-5 mb-4">
+                            VGIC 2025 is proud to bring together the <strong>TOP 100 INNOVATORS</strong> – Vietnamese and Vietnamese-origin people with global influence in the field of innovation across Semiconductors, Generative AI, and Fintech. This exclusive forum creates a platform for building influential relationships and driving transformative solutions.
+                        </p>
+                        <p class="fs-5 mb-5">
+                            Celebrating groundbreaking contributions to global and Vietnamese innovation, the VGIC 2025 Award honors individuals who are bridging the gap between Vietnam and the world—bringing global innovations closer to Vietnam while showcasing Vietnam's talent and ingenuity on the international stage.
+                        </p>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="detail-card">
+                                <h3 class="text-uppercase fw-bold mb-3">Where</h3>
+                                <p class="fs-6">Google APAC Headquarters in Singapore (Day 1 & 2)<br>Singapore Management University (Day 3)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-card">
+                                <h3 class="text-uppercase fw-bold mb-3">When</h3>
+                                <p class="fs-6">Thursday to Saturday<br>February 20 to 22, 2025</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-card">
+                                <h3 class="text-uppercase fw-bold mb-3">Organizers</h3>
+                                <p class="fs-6">AVSE Global</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Slideshow Column -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="goals-slideshow position-relative">
+                        <div class="goals-slide active">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/conference5-1024x683.jpg" alt="VGIC Conference" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="goals-slide">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/heading-4-min-1024x683.jpg" alt="VGIC Event" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="goals-slide">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/2C9A0179-min-min-1024x683.jpg" alt="VGIC Innovation" class="img-fluid rounded shadow">
+                        </div>
+                        <!-- Slideshow Indicators -->
+                        <div class="slideshow-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content Column -->
+                <div class="col-lg-6">
+                    <div class="goals-content ps-lg-4">
+                        <h2 class="mb-4 text-primary fw-bold text-uppercase">Goals & Aspirations</h2>
+                        <p class="fs-5 mb-4 text-muted">
+                            With the mission of inspiring and leading solutions to promote the application of science and technology, VGIC 2025 focuses on the central theme "Connect - Converge - Create: Empowering the Future with Technology."
+                        </p>
+                        
+                        <div class="goals-items">
+                            <div class="goal-item mb-4">
+                                <h4 class="text-primary fw-bold mb-2">Connect</h4>
+                                <p class="text-muted">to promote extensive cooperation and explore practical directions for helping Vietnam effectively participate in the global semiconductor supply chain, AI ecosystem, and fintech network.</p>
+                            </div>
+                            
+                            <div class="goal-item mb-4">
+                                <h4 class="text-primary fw-bold mb-2">Converge</h4>
+                                <p class="text-muted">and create a platform where new ideas and technologies intersect, creating synergy in innovative solutions based on AI, semiconductor and fintech - the main drivers of the country's sustainable development and future prosperity in the new era.</p>
+                            </div>
+                            
+                            <div class="goal-item">
+                                <h4 class="text-primary fw-bold mb-2">Create</h4>
+                                <p class="text-muted">sustainable values by leveraging innovation, transforming knowledge into action, and building practical strategies, affirming Vietnam's position on the world technology map.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="key-features-section py-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100 p-4">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-person-badge feature-icon-blue"></i>
+                        </div>
+                        <h3 class="feature-title text-primary mb-3">CONNECT<br>TALENT</h3>
+                        <p class="feature-description text-muted">Connecting young talents with enterprise for career matching</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100 p-4">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-globe feature-icon-orange"></i>
+                        </div>
+                        <h3 class="feature-title text-warning mb-3">CONNECT<br>VENTURE<br>CAPITAL</h3>
+                        <p class="feature-description text-muted">Connecting investment funds and startups</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100 p-4">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-people feature-icon-blue"></i>
+                        </div>
+                        <h3 class="feature-title text-primary mb-3">DISCUSS</h3>
+                        <p class="feature-description text-muted">In-depth discussion on the three key technology sectors: Semiconductor, AI, and Fintech</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100 p-4">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-building feature-icon-orange"></i>
+                        </div>
+                        <h3 class="feature-title text-warning mb-3">SITE VISIT</h3>
+                        <p class="feature-description text-muted">Site visits to renowned semiconductor, robotics, and AI laboratories, with live demos of AI solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Will Get Section -->
+    <section class="what-you-get-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-primary fw-bold">What you will get</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card text-center h-100 p-4">
+                        <div class="benefit-icon mb-4">
+                            <i class="bi bi-diagram-3 benefit-icon-style"></i>
+                        </div>
+                        <h4 class="benefit-title mb-3">Networking</h4>
+                        <p class="benefit-description">Connect with leading experts, industry leaders; Connect VCs and startup founders for investment opportunities</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card text-center h-100 p-4">
+                        <div class="benefit-icon mb-4">
+                            <i class="bi bi-person-circle benefit-icon-style"></i>
+                        </div>
+                        <h4 class="benefit-title mb-3">Discussion</h4>
+                        <p class="benefit-description">Discuss and find solutions to strategic challenges in the three technological domains</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card text-center h-100 p-4">
+                        <div class="benefit-icon mb-4">
+                            <i class="bi bi-bar-chart benefit-icon-style"></i>
+                        </div>
+                        <h4 class="benefit-title mb-3">Influence</h4>
+                        <p class="benefit-description">Contribute input to a voluntary report to be submitted to the Vietnamese Government</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card text-center h-100 p-4">
+                        <div class="benefit-icon mb-4">
+                            <i class="bi bi-rocket benefit-icon-style"></i>
+                        </div>
+                        <h4 class="benefit-title mb-3">Exploration</h4>
+                        <p class="benefit-description">Explore breakthrough technologies and real world innovative applications of GenAI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section py-5" data-countdown-date="2025-06-20T09:00:00">
+        <div class="countdown-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="countdown-title text-white fw-bold mb-4">HURRY UP!</h2>
+                    <a href="#" class="btn btn-primary btn-lg mb-4 register-now-btn">Register Now</a>
+                    <p class="countdown-subtitle text-white mb-5">VGIC 2025 will start in</p>
+                    
+                    <div class="countdown-timer d-flex justify-content-center flex-wrap gap-3">
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="weeks">00</div>
+                            <div class="countdown-label">weeks</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="days">00</div>
+                            <div class="countdown-label">days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="hours">00</div>
+                            <div class="countdown-label">hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="minutes">00</div>
+                            <div class="countdown-label">minutes</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="seconds">00</div>
+                            <div class="countdown-label">seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="topics-section py-5">
+        <div class="topics-wave-decoration">
+            <svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#1e3a8a"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="#1e3a8a"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#1e3a8a"></path>
+            </svg>
+        </div>
+        
+        <div class="container position-relative">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="topic-card-new">
+                        <div class="topic-header">
+                            <h3 class="topic-title-new text-primary fw-bold">SEMICONDUCTOR</h3>
+                            <div class="topic-number-new">1</div>
+                        </div>
+                        <div class="topic-content">
+                            <ul class="topic-list">
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Address global chip shortages and strategies for supply chain resilience.</li>
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Highlight advanced technologies like AI-specific chips and quantum computing.</li>
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Explore Vietnam's potential in semiconductors, focusing on infrastructure, talent, and investment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="topic-card-new">
+                        <div class="topic-header">
+                            <h3 class="topic-title-new text-primary fw-bold">AI & GENAI</h3>
+                            <div class="topic-number-new">2</div>
+                        </div>
+                        <div class="topic-content">
+                            <ul class="topic-list">
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Focus on generative AI applications and ethical considerations.</li>
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Explore AI's role in healthcare, sustainability, and accessibility.</li>
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Discuss AI's impact on jobs and workforce upskilling.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="topic-card-new">
+                        <div class="topic-header">
+                            <h3 class="topic-title-new text-primary fw-bold">FINTECH</h3>
+                            <div class="topic-number-new">3</div>
+                        </div>
+                        <div class="topic-content">
+                            <ul class="topic-list">
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Discuss embedded finance and open banking opportunities.</li>
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Explore AI applications in fraud detection and personalized financial services.</li>
+                                <li><i class="bi bi-check-lg text-success me-2"></i>Highlight the future of payments, including digital currencies and security challenges.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="topics-wave-decoration-bottom">
+            <svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#1e3a8a"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="#1e3a8a"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#1e3a8a"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="agenda" class="schedule-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Schedule Header -->
+                    <div class="schedule-header d-flex justify-content-between align-items-center mb-4">
+                        <div class="schedule-tabs d-flex gap-2">
+                            <button class="schedule-tab active" data-topic="all">All Topics</button>
+                            <button class="schedule-tab" data-topic="ai">AI and GenAI</button>
+                            <button class="schedule-tab" data-topic="fintech">FinTech</button>
+                            <button class="schedule-tab" data-topic="semiconductor">Semiconductor</button>
+                        </div>
+                        <button class="collapse-btn" id="collapseAllBtn">
+                            <span class="collapse-text">Collapse All</span>
+                            <i class="bi bi-chevron-up"></i>
+                        </button>
+                    </div>
+
+                    <!-- Schedule Content -->
+                    <div class="schedule-content">
+                        <!-- Day Navigation -->
+                        <div class="day-navigation">
+                            <div class="day-tab active" data-day="day1">
+                                <div class="day-header">Day 1: 20/02/2025</div>
+                                <div class="day-subtitle">CONNECT – Bridging Minds, Expanding Horizons</div>
+                            </div>
+                            <div class="day-tab" data-day="day2">
+                                <div class="day-header">Day 2: 21/02/2025</div>
+                                <div class="day-subtitle">CONVERGE – Igniting Innovation Through Collaboration</div>
+                            </div>
+                            <div class="day-tab" data-day="day3">
+                                <div class="day-header">Day 3: 22/02/2025</div>
+                                <div class="day-subtitle">CREATE – Empowering the Next Generation</div>
+                            </div>
+                        </div>
+
+                        <!-- Schedule Events -->
+                        <div class="schedule-events">
+                            <!-- Day 1 Events -->
+                            <div class="day-events active" id="day1">
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>09:00 - 12:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Site Visit</h5>
+                                        <p class="event-description">Guests will visit Google, NTU, and ITE (by registration)</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>12:30 - 14:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Gourmet Luncheon</h5>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>16:45 - 17:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Panel: Vietnam Global Innovation Connect: Power of Synergy</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Day 2 Events -->
+                            <div class="day-events" id="day2">
+                                <div class="event-item" data-topic="ai">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>09:30 - 12:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">AI & GenAI Deep Dive Workshop</h5>
+                                        <p class="event-description">Exploring the latest developments in artificial intelligence and generative AI technologies</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="fintech">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>13:00 - 16:00</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">FinTech Innovation Pitch-A-Thon</h5>
+                                        <p class="event-description">Venture capital presentations focusing on financial technology solutions</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>16:00 - 16:15</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">VGIC2025 Recognition Ceremony</h5>
+                                        <p class="event-description">Excellence Award & People's Choice Innovation Award</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Day 3 Events -->
+                            <div class="day-events" id="day3">
+                                <div class="event-item" data-topic="semiconductor">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>09:30 - 10:15</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Semiconductor Industry Fireside Chat</h5>
+                                        <p class="event-description">"What Lies Ahead – Career trends and opportunities in semiconductor"</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>10:20 - 11:25</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Speed Networking</h5>
+                                        <p class="event-description">Career guidance, CV clinic at Singapore Management University</p>
+                                    </div>
+                                </div>
+
+                                <div class="event-item" data-topic="all">
+                                    <div class="event-time">
+                                        <i class="bi bi-clock"></i>
+                                        <span>08:30 - 12:30</span>
+                                    </div>
+                                    <div class="event-content">
+                                        <h5 class="event-title">Flash Report</h5>
+                                        <p class="event-description">With Experts (invitation only)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Guests & Speakers Hero Section -->
+    <section class="guests-speakers-hero">
+        <!-- Decorative Elements -->
+        <div class="decorative-elements">
+            <div class="decoration decoration-1"></div>
+            <div class="decoration decoration-2"></div>
+            <div class="decoration decoration-3"></div>
+            <div class="decoration decoration-4"></div>
+            <div class="decoration decoration-5"></div>
+            <div class="decoration decoration-6"></div>
+        </div>
+        
+        <div class="guests-speakers-background">
+            <div class="guests-speakers-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="guests-speakers-content">
+                        <div class="world-class-label">World Class</div>
+                        <h2 class="guests-speakers-title">OUR GUESTS</h2>
+                        <h2 class="guests-speakers-subtitle">& SPEAKERS</h2>
+                        <p class="guests-speakers-description">
+                            VGIC 2025 is proud to attract and gather the TOP 100 INNOVATORS – globally influential Vietnamese and Vietnamese-origin people innovators, including experts, scientists, senior leaders, and winners of prestigious domestic and foreign technology and innovation awards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="speakers-section py-5 bg-white">
+        <div class="container">
+            <!-- First Row of Speakers -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="NGUYEN Bich Yen" class="speaker-image">
+                            <div class="online-indicator">(online)</div>
+                        </div>
+                        <h4 class="speaker-name">NGUYEN Bich Yen</h4>
+                        <p class="speaker-location">United States</p>
+                        <p class="speaker-bio">Former senior manager and fellow at Freescale/Motorola. 200 worldwide patents. IEEE Fellow, First national Women in Technology Lifetime Achievement Award.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="Philipp Rösler" class="speaker-image">
+                            <div class="online-indicator">(online)</div>
+                        </div>
+                        <h4 class="speaker-name">Philipp Rösler</h4>
+                        <p class="speaker-location">Switzerland</p>
+                        <p class="speaker-bio">Honorary Consul of Vietnam to Switzerland. Former Vice-Chancellor of Germany. Chairman of VinaCapital Ventures' Advisory Board.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="HOANG Ha" class="speaker-image">
+                        </div>
+                        <h4 class="speaker-name">HOANG Ha</h4>
+                        <p class="speaker-location vietnam">Viet Nam</p>
+                        <p class="speaker-bio">MSc, Head of Data Analytics, Management, and Innovation at Nestlé Vietnam.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="THAI Tri Hung" class="speaker-image">
+                        </div>
+                        <h4 class="speaker-name">THAI Tri Hung</h4>
+                        <p class="speaker-location vietnam">Viet Nam</p>
+                        <p class="speaker-bio">MoMo's Senior Vice President and Chief Technology Officer</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="DUONG Nguyen Vu" class="speaker-image">
+                        </div>
+                        <h4 class="speaker-name">DUONG Nguyen Vu</h4>
+                        <p class="speaker-location singapore">Singapore</p>
+                        <p class="speaker-bio">Professor of Aerospace Engineering, School of Mechanical & Aerospace Engineering, Scientific Director of Air Traffic Management Research Institute of Nanyang Technological University</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row Placeholder -->
+             <div class="row g-4 mb-5">
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="NGUYEN Bich Yen" class="speaker-image">
+                            <div class="online-indicator">(online)</div>
+                        </div>
+                        <h4 class="speaker-name">NGUYEN Bich Yen</h4>
+                        <p class="speaker-location">United States</p>
+                        <p class="speaker-bio">Former senior manager and fellow at Freescale/Motorola. 200 worldwide patents. IEEE Fellow, First national Women in Technology Lifetime Achievement Award.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="Philipp Rösler" class="speaker-image">
+                            <div class="online-indicator">(online)</div>
+                        </div>
+                        <h4 class="speaker-name">Philipp Rösler</h4>
+                        <p class="speaker-location">Switzerland</p>
+                        <p class="speaker-bio">Honorary Consul of Vietnam to Switzerland. Former Vice-Chancellor of Germany. Chairman of VinaCapital Ventures' Advisory Board.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="HOANG Ha" class="speaker-image">
+                        </div>
+                        <h4 class="speaker-name">HOANG Ha</h4>
+                        <p class="speaker-location vietnam">Viet Nam</p>
+                        <p class="speaker-bio">MSc, Head of Data Analytics, Management, and Innovation at Nestlé Vietnam.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="THAI Tri Hung" class="speaker-image">
+                        </div>
+                        <h4 class="speaker-name">THAI Tri Hung</h4>
+                        <p class="speaker-location vietnam">Viet Nam</p>
+                        <p class="speaker-bio">MoMo's Senior Vice President and Chief Technology Officer</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-20p col-md-6 col-sm-12">
+                    <div class="speaker-profile text-center">
+                        <div class="speaker-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="DUONG Nguyen Vu" class="speaker-image">
+                        </div>
+                        <h4 class="speaker-name">DUONG Nguyen Vu</h4>
+                        <p class="speaker-location singapore">Singapore</p>
+                        <p class="speaker-bio">Professor of Aerospace Engineering, School of Mechanical & Aerospace Engineering, Scientific Director of Air Traffic Management Research Institute of Nanyang Technological University</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Venues Section -->
+    <section id="venue" class="venues-section py-5 bg-light">
+        <div class="container">
+            <!-- Decorative Elements -->
+            <div class="venue-decorations">
+                <div class="venue-decoration venue-decoration-1"></div>
+                <div class="venue-decoration venue-decoration-2"></div>
+            </div>
+            
+            <!-- Section Header -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="venues-title">Venues</h2>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="row g-4 align-items-center">
+                <!-- Left Side - Two Images Stacked -->
+                <div class="col-lg-6">
+                    <div class="venue-images-left">
+                        <!-- Google Image -->
+                        <div class="venue-image-container mb-3">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/google-office-new-min.jpg" alt="Google APAC Headquarters" class="venue-image">
+                        </div>
+                        <!-- SMU Image -->
+                        <div class="venue-image-container">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/google-office-new-min.jpg" alt="Singapore Management University" class="venue-image">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Content -->
+                <div class="col-lg-6">
+                    <div class="venue-content-right">
+                        <!-- Date Badge -->
+                        <div class="venue-date-badge-yellow">
+                            <span class="date-text">Feb 20 - 22</span>
+                        </div>
+                        
+                        <!-- Location -->
+                        <h3 class="venue-location-title">Singapore, 2025</h3>
+                        
+                        <!-- Venue Names with Arrow -->
+                        <div class="venue-names-with-arrow">
+                            <div class="venue-arrow-pointer">→</div>
+                            <div class="venue-name-list">
+                                <div class="venue-name-bold">Google APAC Headquarters</div>
+                                <div class="venue-name-bold">Singapore Management University</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Description -->
+                        <div class="venue-description-text">
+                            <p>VGIC 2025 will take place at two renowned locations in Singapore, seamlessly blending academic spaces with a creative environment that delivers powerful inspiration. <strong>Google's APAC Headquarters</strong> is a global leading technology company with a diverse technology ecosystem, with a strong focus on innovation, including support for promising start-ups.</p>
+                            
+                            <p><strong>Singapore Management University</strong> is one of the leading and most dynamic universities in Asia, consistently emphasizing conducting research and addressing global challenges.</p>
+                        </div>
+                        
+                        <!-- VGIC Badge - Vertical -->
+                        <div class="vgic-badge-vertical">
+                            <span class="vgic-text-vertical">VGIC 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Partners -->
+    <section class="media-partners py-5 bg-white">
+        <div class="container">
+            <!-- Decorative Element -->
+            <div class="media-partners-decoration">
+                <div class="decoration-circle"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="media-partners-title">Media Partners</h2>
+                </div>
+            </div>
+            
+            <!-- First Row - 4 logos -->
+            <div class="row g-4 align-items-center justify-content-center mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="media-partner-logo">
+                        <img src="https://www.vgic.net/wp-content/uploads/2025/01/Vietnamnet-white-background-1.png" alt="VietnamNet" class="partner-logo">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="media-partner-logo">
+                        <img src="https://www.vgic.net/wp-content/uploads/2025/02/Vneconomy.png" alt="VnEconomy" class="partner-logo">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="media-partner-logo">
+                        <img src="https://www.vgic.net/wp-content/uploads/2025/02/Startup-Vietnam-Foundation.png" alt="Startup Vietnam Foundation" class="partner-logo">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="media-partner-logo">
+                        <img src="https://www.vgic.net/wp-content/uploads/2025/01/VTV.png" alt="VTV" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second Row - 2 logos centered -->
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="media-partner-logo">
+                        <img src="https://www.vgic.net/wp-content/uploads/2025/01/Vietsuccess-text-1.png" alt="VietSuccess" class="partner-logo">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="media-partner-logo">
+                        <img src="https://www.vgic.net/wp-content/uploads/2025/01/VTV-Dien-dan-doanh-nghiep.png" alt="VTV Diễn đàn Doanh nghiệp" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="new-footer">
+        <!-- Decorative Lines -->
+        <div class="footer-decorative-lines">
+            <div class="decorative-line line-1"></div>
+            <div class="decorative-line line-2"></div>
+            <div class="decorative-line line-3"></div>
+            <div class="decorative-line line-4"></div>
+            <div class="decorative-line line-5"></div>
+            <div class="decorative-line line-6"></div>
+            <div class="decorative-line line-7"></div>
+            <div class="decorative-line line-8"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side - Logo and Slogan -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <div class="footer-left">
+                        <!-- VGIC Logo -->
+                        <div class="footer-logo mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="footer-logo-icon me-3">VN</div>
+                                <div class="footer-logo-text">
+                                    <div class="footer-logo-main">VIETNAM GLOBAL</div>
+                                    <div class="footer-logo-sub">INNOVATION CONNECT | 2025 | SINGAPORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slogan -->
+                        <div class="footer-slogan">
+                            <h3 class="slogan-text">CONNECT – CONVERGE – CREATE:</h3>
+                            <h3 class="slogan-text">EMPOWERING THE FUTURE WITH TECHNOLOGY</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Contact -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="footer-right text-lg-end text-center">
+                        <h2 class="contact-title mb-4">Contact</h2>
+                        <div class="contact-email mb-4">
+                            <span class="email-label">Email: </span>
+                            <a href="mailto:contact@vgic.net" class="email-link">contact@vgic.net</a>
+                        </div>
+                        
+                        <!-- Social Media Icons -->
+                        <div class="social-media">
+                            <a href="#" class="social-icon facebook" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-6 col-12 text-lg-start text-center mb-2 mb-md-0">
+                        <p class="copyright-text">© Copyright vgic.net AVSE Global - Design By RikSoft</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 text-lg-end text-center">
+                        <div class="footer-links">
+                            <a href="#" class="footer-link">Terms</a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
