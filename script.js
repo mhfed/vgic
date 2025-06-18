@@ -368,6 +368,14 @@ class CountdownTimer {
 
 // Initialize all components when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+        easing: 'ease-out-cubic'
+    });
+
     // Initialize countdown timer
     const countdownSection = document.querySelector('.countdown-section');
     if (countdownSection) {
@@ -395,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize typing effect
     const typingElement = document.querySelector('.typing-text');
     if (typingElement) {
-        const words = ['SEMICONDUCTOR', 'AI & GENAI', 'FINTECH'];
+        const words = ['SEMICONDUCTOR'];
         new TypeWriter(typingElement, words, 2000);
     }
 
@@ -501,6 +509,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial body opacity for smooth load
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.1s ease';
+
+    // Load More Speakers functionality
+    const loadMoreBtn = document.getElementById('loadMoreSpeakers');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // Here you would typically load more speakers from an API
+            // For now, we'll just hide the button as placeholder
+            this.style.display = 'none';
+            
+            // You could add more speaker rows here
+            console.log('Loading more speakers...');
+        });
+    }
 });
 
 // Mobile menu toggle (if needed in future)
@@ -671,12 +692,15 @@ class MobileMenuManager {
 // Initialize navbar scroll effect
 function initNavbarScrollEffect() {
     const navbar = document.querySelector('.custom-navbar');
-    if (navbar) {
+    const logoImg = document.querySelector('.logo-image');
+    if (navbar && logoImg) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
                 navbar.classList.add('scrolled');
+                logoImg.src = 'https://www.vgic.net/wp-content/uploads/2021/12/vgic-logo-2025.png';
             } else {
                 navbar.classList.remove('scrolled');
+                logoImg.src = 'https://www.vgic.net/wp-content/uploads/2021/12/vgic-logo-white.png';
             }
         });
     }

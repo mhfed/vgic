@@ -138,14 +138,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     margin: 0 0.5rem;
     padding: 0.5rem 1rem !important;
-    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    background: rgba(255, 255, 255, 0.1);
+.navbar-nav .nav-link:hover{
     color: var(--accent-yellow) !important;
+    border-bottom: 2px solid var(--accent-yellow);
 }
 
 .navbar-brand.logo {
@@ -173,9 +171,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #1e3a8a !important;
 }
 
-.custom-navbar.scrolled .navbar-nav .nav-link:hover,
-.custom-navbar.scrolled .navbar-nav .nav-link.active {
-    background: rgba(30, 58, 138, 0.1);
+.custom-navbar.scrolled .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid var(--accent-yellow);
     color: var(--accent-yellow) !important;
 }
 
@@ -326,19 +323,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* About Section */
-.about-wave-decoration {
-    transform: rotate(180deg);
+.top-wave-decoration {
+    pointer-events: none;
     width: 100%;
     height: 120px;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    top: -2px;
+    z-index: 2;
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+.bottom-wave-decoration {
+    pointer-events: none;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
     z-index: 1;
 }
 .about-section {
     background: var(--about-blue) !important;
     color: white;
+    padding-bottom: 160px !important;
 }
 
 .about-section-content {
@@ -361,29 +372,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.topics-wave-decoration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    z-index: 1;
-}
-
-.topics-wave-decoration-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    z-index: 1;
-}
-
-.topics-wave-decoration svg,
-.topics-wave-decoration-bottom svg {
-    width: 100%;
-    height: 100%;
-}
 
 .topics-section .container {
     padding: 120px 0;
@@ -510,10 +498,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 576px) {
-    .topics-wave-decoration,
-    .topics-wave-decoration-bottom {
-        height: 80px;
-    }
     
     .topics-section .container {
         padding: 60px 0;
@@ -865,27 +849,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Add decorative elements */
-.guests-speakers-hero::before {
+/* .guests-speakers-hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    background: linear-gradient(to right, #f8fafc 0%, transparent 20%, transparent 80%, #f8fafc 100%);
     z-index: 4;
-}
+} */
 
-.guests-speakers-hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(to right, transparent 0%, rgba(248, 250, 252, 0.1) 20%, rgba(248, 250, 252, 0.1) 80%, transparent 100%);
-    z-index: 4;
-}
 
 @media (max-width: 768px) {
     .guests-speakers-background {
@@ -1540,7 +1513,7 @@ html {
 
 /* Goals Section */
 .goals-section {
-    background: #f8fafc;
+    background: #fff;
 }
 
 .goals-slideshow {
@@ -1758,7 +1731,6 @@ html {
 }
 
 .section-title {
-    font-size: 3rem;
     font-weight: 700;
     color: var(--primary-blue);
     margin-bottom: 1rem;
@@ -1899,7 +1871,7 @@ html {
 /* Countdown Section */
 .countdown-section {
     position: relative;
-    min-height: 600px;
+    min-height: 800px;
     background-image: url('https://www.vgic.net/wp-content/uploads/2025/01/sing2-min.jpeg');
     background-size: cover;
     background-position: center;
@@ -1916,7 +1888,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(59, 130, 246, 0.6));
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
     z-index: 1;
 }
 
@@ -1935,13 +1907,12 @@ html {
 }
 
 .register-now-btn {
-    background: var(--primary-blue) !important;
+    background: var(--about-blue) !important;
     border: none;
-    padding: 15px 40px;
-    font-size: 1.2rem;
+    padding: 12px 32px;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 50px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
     box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
@@ -1964,7 +1935,7 @@ html {
 }
 
 .countdown-item {
-    background: var(--primary-blue);
+    background: var(--about-blue);
     border-radius: 15px;
     padding: 2rem 1.5rem;
     min-width: 120px;
@@ -2587,10 +2558,9 @@ html {
         transition: all 0.3s ease;
     }
     
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-        color: #fbbf24 !important;
-        transform: translateX(10px);
+    .navbar-nav .nav-link:hover{
+        color: var(--accent-yellow) !important;
+        border-bottom: 2px solid var(--accent-yellow);
     }
     
     .navbar-nav .language-selector {
