@@ -88,6 +88,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
+.covered-by-your-grace {
+    font-family: 'Covered By Your Grace', cursive;
+}
+
 /* Font Weight Classes for Work Sans */
 .work-sans-light {
     font-weight: 300;
@@ -121,6 +125,8 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Custom Navbar */
@@ -332,6 +338,12 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     top: -2px;
     z-index: 2;
+}
+.z-index-1{
+    z-index: 1 !important;
+}
+.z-index-0{
+    z-index: 0 !important;
 }
 .rotate-180 {
     transform: rotate(180deg);
@@ -737,7 +749,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Our Guests & Speakers Hero Section */
 .guests-speakers-hero {
     position: relative;
-    min-height: 800px;
+    min-height: 900px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -809,8 +821,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .world-class-label {
     display: inline-block;
-    background: rgba(251, 191, 36, 0.9);
-    color: #1e3a8a;
+    color: rgba(251, 191, 36, 0.9);
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -818,12 +829,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 .guests-speakers-title {
-    font-size: 3.5rem;
-    font-weight: 900;
+    font-size: 5rem;
+    font-weight: 600;
     color: white;
     margin-bottom: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -831,8 +842,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .guests-speakers-subtitle {
-    font-size: 3.5rem;
-    font-weight: 900;
+    font-size: 5rem;
+    font-weight: 700;
     color: white;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -840,7 +851,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .guests-speakers-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.9);
     max-width: 800px;
     margin: 0 auto;
@@ -897,6 +908,14 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     padding: 4rem 0;
 }
+.speakers-section-load-more {
+    background: var(--about-blue);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
 
 /* Custom 5-column grid */
 .col-lg-20p {
@@ -918,7 +937,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Speaker Profile Styles */
 .speaker-profile {
-    padding: 1rem;
     transition: transform 0.3s ease;
 }
 
@@ -933,12 +951,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .speaker-image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #e5e7eb;
     transition: border-color 0.3s ease;
+    max-width: 100%;
 }
 
 .speaker-image:hover {
@@ -1069,13 +1087,12 @@ h1, h2, h3, h4, h5, h6 {
 .venue-decoration {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.1;
 }
 
 .venue-decoration-1 {
-    width: 150px;
-    height: 150px;
-    background: #1e3a8a;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-blue);
     top: 10%;
     left: 5%;
     animation: float 8s ease-in-out infinite;

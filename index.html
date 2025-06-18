@@ -11,6 +11,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -470,7 +471,7 @@
     </section>
 
     <!-- Schedule Section -->
-    <section id="agenda" class="schedule-section py-5 bg-light">
+    <section id="agenda" class="schedule-section py-5 bg-light position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -761,10 +762,22 @@
                 </div>
             </div>
         </div>
+        <div class="bottom-wave-decoration rotate-180 z-index-0">
+            <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+            </svg>
+        </div>
     </section>
 
     <!-- Our Guests & Speakers Hero Section -->
-    <section class="guests-speakers-hero">
+    <section class="guests-speakers-hero position-relative">
+        <div class="top-wave-decoration rotate-180 z-index-2">
+            <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice">
+                <path class="elementor-shape-fill" d="M265.8 3.5c-10.9 0-15.9 6.2-15.9 6.2s-3.6-3.5-9.2-.9c-9.1 4.1-4.4 13.4-4.4 13.4s-1.2.2-1.9.9c-.6.7-.5 1.9-.5 1.9s-1-.5-2.3-.2c-1.3.3-1.6 1.4-1.6 1.4s.4-3.4-1.5-5c-3.9-3.4-8.3-.2-8.3-.2s-.6-.7-.9-.9c-.4-.2-1.2-.2-1.2-.2s-4.4-3.6-11.5-2.6-10.4 7.9-10.4 7.9-.5-3.3-3.9-4.9c-4.8-2.4-7.4 0-7.4 0s2.4-4.1-1.9-6.4-6.2 1.2-6.2 1.2-.9-.5-2.1-.5-2.3 1.1-2.3 1.1.1-.7-1.1-1.1c-1.2-.4-2 0-2 0s3.6-6.8-3.5-8.9c-6-1.8-7.9 2.6-8.4 4-.1-.3-.4-.7-.9-1.1-1-.7-1.3-.5-1.3-.5s1-4-1.7-5.2c-2.7-1.2-4.2 1.1-4.2 1.1s-3.1-1-5.7 1.4-2.1 5.5-2.1 5.5-.9 0-2.1.7-1.4 1.7-1.4 1.7-1.7-1.2-4.3-1.2c-2.6 0-4.5 1.2-4.5 1.2s-.7-1.5-2.8-2.4c-2.1-.9-4 0-4 0s2.6-5.9-4.7-9c-7.3-3.1-12.6 3.3-12.6 3.3s-.9 0-1.9.2c-.9.2-1.5.9-1.5.9S99.4 3 94.9 3.9c-4.5.9-5.7 5.7-5.7 5.7s-2.8-5-12.3-3.9-11.1 6-11.1 6-1.2-1.4-4-.7c-.8.2-1.3.5-1.8.9-.9-2.1-2.7-4.9-6.2-4.4-3.2.4-4 2.2-4 2.2s-.5-.7-1.2-.7h-1.4s-.5-.9-1.7-1.4-2.4 0-2.4 0-2.4-1.2-4.7 0-3.1 4.1-3.1 4.1-1.7-1.4-3.6-.7c-1.9.7-1.9 2.8-1.9 2.8s-.5-.5-1.7-.2c-1.2.2-1.4.7-1.4.7s-.7-2.3-2.8-2.8c-2.1-.5-4.3.2-4.3.2s-1.7-5-11.1-6c-3.8-.4-6.6.2-8.5 1v21.2h283.5V11.1c-.9.2-1.6.4-1.6.4s-5.2-8-16.1-8z"></path>
+            </svg>
+        </div>
         <div class="guests-speakers-background">
             <div class="guests-speakers-overlay"></div>
         </div>
@@ -777,9 +790,13 @@
             <div class="row container">
                 <div class="col-12 text-center">
                     <div class="guests-speakers-content">
-                        <div class="world-class-label">World Class</div>
-                        <h2 class="guests-speakers-title" data-aos="fade-up" data-aos-duration="1000">OUR GUESTS</h2>
-                        <h2 class="guests-speakers-subtitle" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">& SPEAKERS</h2>
+                        <div class="world-class-label font-covered-by-your-grace">World Class
+                            <div>
+                                <img src="https://www.vgic.net/wp-content/uploads/2022/01/arrow37.webp" alt="arrow" class="arrow-icon" style="width: 20px;">
+                            </div>
+                        </div>
+                        <h2 class="guests-speakers-title display-1" data-aos="fade-up" data-aos-duration="1000">OUR GUESTS</h2>
+                        <h2 class="guests-speakers-subtitle display-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">& SPEAKERS</h2>
                         <p class="guests-speakers-description">
                             VGIC 2025 is proud to attract and gather the TOP 100 INNOVATORS – globally influential Vietnamese and Vietnamese-origin people innovators, including experts, scientists, senior leaders, and winners of prestigious domestic and foreign technology and innovation awards.
                         </p>
@@ -798,7 +815,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="NGUYEN Bich Yen" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/image-300x300.jpg" alt="NGUYEN Bich Yen" class="speaker-image">
                             <div class="online-indicator">(online)</div>
                         </div>
                         <h4 class="speaker-name">NGUYEN Bich Yen</h4>
@@ -810,7 +827,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="Philipp Rösler" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/Philipp-Rosler_new-e1738485764988-300x300.png" alt="Philipp Rösler" class="speaker-image">
                             <div class="online-indicator">(online)</div>
                         </div>
                         <h4 class="speaker-name">Philipp Rösler</h4>
@@ -822,7 +839,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="HOANG Ha" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/1674156537404-300x300.jpg" alt="HOANG Ha" class="speaker-image">
                         </div>
                         <h4 class="speaker-name">HOANG Ha</h4>
                         <p class="speaker-location vietnam">Viet Nam</p>
@@ -833,7 +850,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="THAI Tri Hung" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/Thai-Tri-Hung-SVP-CTO-MoMo-e1739332915198-300x300.jpg" alt="THAI Tri Hung" class="speaker-image">
                         </div>
                         <h4 class="speaker-name">THAI Tri Hung</h4>
                         <p class="speaker-location vietnam">Viet Nam</p>
@@ -844,7 +861,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="DUONG Nguyen Vu" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/DuongNguyenVu-e1739107929184-300x300.jpg" alt="DUONG Nguyen Vu" class="speaker-image">
                         </div>
                         <h4 class="speaker-name">DUONG Nguyen Vu</h4>
                         <p class="speaker-location singapore">Singapore</p>
@@ -852,13 +869,12 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Second Row Placeholder -->
-             <div class="row g-4 mb-5">
+        <!-- Second Row of Speakers -->
+            <div class="row g-4 mb-5">
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="NGUYEN Bich Yen" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/image-300x300.jpg" alt="NGUYEN Bich Yen" class="speaker-image">
                             <div class="online-indicator">(online)</div>
                         </div>
                         <h4 class="speaker-name">NGUYEN Bich Yen</h4>
@@ -870,7 +886,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="Philipp Rösler" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/Philipp-Rosler_new-e1738485764988-300x300.png" alt="Philipp Rösler" class="speaker-image">
                             <div class="online-indicator">(online)</div>
                         </div>
                         <h4 class="speaker-name">Philipp Rösler</h4>
@@ -882,7 +898,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="HOANG Ha" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/1674156537404-300x300.jpg" alt="HOANG Ha" class="speaker-image">
                         </div>
                         <h4 class="speaker-name">HOANG Ha</h4>
                         <p class="speaker-location vietnam">Viet Nam</p>
@@ -893,7 +909,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="THAI Tri Hung" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/Thai-Tri-Hung-SVP-CTO-MoMo-e1739332915198-300x300.jpg" alt="THAI Tri Hung" class="speaker-image">
                         </div>
                         <h4 class="speaker-name">THAI Tri Hung</h4>
                         <p class="speaker-location vietnam">Viet Nam</p>
@@ -904,7 +920,7 @@
                 <div class="col-lg-20p col-md-6 col-sm-12">
                     <div class="speaker-profile text-center">
                         <div class="speaker-image-container">
-                            <img src="https://www.vgic.net/wp-content/uploads/2025/02/don-phan-e1739983921860-300x300.jpg" alt="DUONG Nguyen Vu" class="speaker-image">
+                            <img src="https://www.vgic.net/wp-content/uploads/2025/01/DuongNguyenVu-e1739107929184-300x300.jpg" alt="DUONG Nguyen Vu" class="speaker-image">
                         </div>
                         <h4 class="speaker-name">DUONG Nguyen Vu</h4>
                         <p class="speaker-location singapore">Singapore</p>
@@ -916,7 +932,7 @@
             <!-- Load More Button -->
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <button class="btn btn-primary btn-lg px-5 py-3" id="loadMoreSpeakers">Load More</button>
+                    <button class="btn speakers-section speakers-section-load-more btn-lg" id="loadMoreSpeakers">Load More</button>
                 </div>
             </div>
         </div>
@@ -928,7 +944,7 @@
             <!-- Decorative Elements -->
             <div class="venue-decorations">
                 <div class="venue-decoration venue-decoration-1"></div>
-                <div class="venue-decoration venue-decoration-2"></div>
+                <!-- <div class="venue-decoration venue-decoration-2"></div> -->
             </div>
             
             <!-- Section Header -->
